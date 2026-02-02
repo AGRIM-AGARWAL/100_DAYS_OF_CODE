@@ -1,15 +1,31 @@
-//
-//  main.c
-//  c_dsa_
-//
-//  Created by AGRIM AGARWAL on 02/02/26.
-//
-
-#include <stdlib.h>
 #include <stdio.h>
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    printf("Hello, World!\n");
-    return EXIT_SUCCESS;
+int main()
+{
+    int i=0;
+    
+    int n=0;
+    
+    printf("enter size of array : ");
+    scanf("%d", &n);
+    
+    int arr[n];
+    
+    printf("enter elements for array : ");
+    
+    for (i = 0; i < n; i++)
+    {
+        scanf("%d", &arr[i]);
+        printf("\n");
+    }
+    
+    for(i=0 ; i<n ; i++)
+    {
+        printf("the input array is");
+        printf("%d", arr[i]);
+        printf("\n");
+        
+    }
+    
+    return 0;
 }
